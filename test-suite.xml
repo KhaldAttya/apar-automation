@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Assignment">
+    <listeners>
+        <listener class-name="org.testng.reporters.JUnitXMLReporter" />
+        <listener class-name="org.testng.reporters.XMLReporter" />
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+    </listeners>
+    <test name="SubscriptionTest - Web">
+        <classes>
+            <class name="web.tests.SubscriptionTest"/>
+        </classes>
+    </test>
+    <test name="AddDeviceTest - API">
+        <classes>
+            <class name="api.AddDeviceTest"/>
+        </classes>
+    </test>
+</suite>
